@@ -1,0 +1,53 @@
+/* Adjustments for better responsiveness */
+.story {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.story .left {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    margin: 1.2rem 0;
+    flex: 1; /* Occupy remaining space */
+}
+
+.story .right {
+    max-width: 700px;
+    flex: 1; /* Occupy remaining space */
+}
+
+/* Styling for the image container */
+.right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.right .img {
+    max-width: 100%; /* Adjusted to take full width */
+    border: 1px solid #333;
+    display: block; /* Remove whitespace below image */
+    margin: 0 auto; /* Center the image */
+}
+
+.right .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.right .bottom {
+    grid-column: 4 / span 9; /* Adjusted for better positioning */
+    grid-row: 1;
+    z-index: 5;
+}
+
+

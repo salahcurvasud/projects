@@ -1,0 +1,30 @@
+label {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4f4;
+    border: 1px solid #ccc; /* Add a subtle border for better visibility */
+    border-radius: 4px; /* Add some border radius for a modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for better user interaction */
+form input:hover,
+form textarea:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
